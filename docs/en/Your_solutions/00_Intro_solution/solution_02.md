@@ -1,4 +1,4 @@
-# Systems of Equations: Theory and Step-by-Step Solution
+# Systems of Equations
 
 This document outlines the process of solving a system of two linear equations with two variables:
 1.  **Equation 1:** $2x + 3y = 12$
@@ -71,3 +71,4 @@ To ensure the solution is correct, we substitute $(3, 2)$ back into both origina
 | **$x$** | $3$ |
 | **$y$** | $2$ |
 | **Intersection Point** | $(3, 2)$ |
+
