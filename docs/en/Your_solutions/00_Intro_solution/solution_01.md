@@ -1,4 +1,4 @@
-# Vector Algebra: Theory and Step-by-Step Solutions
+# Vector Algebra
 
 This document explores the fundamental operations of vector algebra in $\mathbb{R}^3$ using two specific vectors:
 $$\vec{a} = [2, 1, -3]$$
