@@ -1,197 +1,88 @@
-# Section 0 — Mathematical Foundations  
-## 1. Vector Algebra
+# Vector Algebra Calculations
 
-We are given two vectors in $\mathbb{R}^3$:
+This repository contains a step-by-step solution for common vector operations in 3D space using two given vectors:
 
-$$
-\vec{a} = [2,\,1,\,-3], \qquad \vec{b} = [4,\,-2,\,1]
-$$
+$$\vec{a} = [2, 1, -3]$$
+$$\vec{b} = [4, -2, 1]$$
 
 ---
 
-## Necessary definitions and formulas
+## a) Magnitude of each vector
 
-### 1) Magnitude (length) of a vector
-For $\vec{v} = [v_x, v_y, v_z]$,
+The magnitude (or length) of a vector $\vec{v} = [x, y, z]$ is calculated using the formula:
+$$\|\vec{v}\| = \sqrt{x^2 + y^2 + z^2}$$
 
-$$
-|\vec{v}| = \sqrt{v_x^2 + v_y^2 + v_z^2}
-$$
 
-### 2) Dot product
-For $\vec{a} = [a_x,a_y,a_z]$ and $\vec{b} = [b_x,b_y,b_z]$,
 
-$$
-\vec{a}\cdot\vec{b} = a_x b_x + a_y b_y + a_z b_z
-$$
+### Magnitude of $\vec{a}$:
+$$\|\vec{a}\| = \sqrt{2^2 + 1^2 + (-3)^2}$$
+$$\|\vec{a}\| = \sqrt{4 + 1 + 9} = \mathbf{\sqrt{14}} \approx 3.74$$
 
-### 3) Cross product
-For $\vec{a} = [a_x,a_y,a_z]$ and $\vec{b} = [b_x,b_y,b_z]$,
-
-$$
-\vec{a}\times\vec{b} =
-\begin{bmatrix}
-a_y b_z - a_z b_y \\
-a_z b_x - a_x b_z \\
-a_x b_y - a_y b_x
-\end{bmatrix}
-$$
-
-### 4) Angle between two vectors
-If $\theta$ is the angle between $\vec{a}$ and $\vec{b}$, then
-
-$$
-\vec{a}\cdot\vec{b} = |\vec{a}|\,|\vec{b}| \cos\theta
-$$
-
-So,
-
-$$
-\theta = \arccos\!\left(\frac{\vec{a}\cdot\vec{b}}{|\vec{a}|\,|\vec{b}|}\right)
-$$
+### Magnitude of $\vec{b}$:
+$$\|\vec{b}\| = \sqrt{4^2 + (-2)^2 + 1^2}$$
+$$\|\vec{b}\| = \sqrt{16 + 4 + 1} = \mathbf{\sqrt{21}} \approx 4.58$$
 
 ---
 
-## (a) Magnitude of each vector
+## b) Dot Product ($\vec{a} \cdot \vec{b}$)
 
-### Magnitude of $\vec{a}$
-Using $|\vec{a}| = \sqrt{2^2 + 1^2 + (-3)^2}$:
+The dot product is the sum of the products of the corresponding components:
+$$\vec{a} \cdot \vec{b} = (a_x \cdot b_x) + (a_y \cdot b_y) + (a_z \cdot b_z)$$
 
-$$
-|\vec{a}| = \sqrt{4 + 1 + 9} = \sqrt{14}
-$$
 
-### Magnitude of $\vec{b}$
-Using $|\vec{b}| = \sqrt{4^2 + (-2)^2 + 1^2}$:
 
-$$
-|\vec{b}| = \sqrt{16 + 4 + 1} = \sqrt{21}
-$$
-
-**Answer (a):**
-
-$$
-|\vec{a}|=\sqrt{14}, \qquad |\vec{b}|=\sqrt{21}
-$$
+**Calculation:**
+$$\vec{a} \cdot \vec{b} = (2 \times 4) + (1 \times -2) + (-3 \times 1)$$
+$$\vec{a} \cdot \vec{b} = 8 - 2 - 3$$
+$$\vec{a} \cdot \vec{b} = \mathbf{3}$$
 
 ---
 
-## (b) Dot product $\vec{a}\cdot\vec{b}$
+## c) Cross Product ($\vec{a} \times \vec{b}$)
 
-Compute component-by-component:
+The cross product is calculated using the determinant of a $3 \times 3$ matrix:
 
-$$
-\vec{a}\cdot\vec{b} = (2)(4) + (1)(-2) + (-3)(1)
-$$
+$$\vec{a} \times \vec{b} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & 1 & -3 \\ 4 & -2 & 1 \end{vmatrix}$$
 
-$$
-\vec{a}\cdot\vec{b} = 8 - 2 - 3 = 3
-$$
 
-**Answer (b):**
 
-$$
-\vec{a}\cdot\vec{b} = 3
-$$
+**Step-by-step expansion:**
+* **i-component:** $(1 \times 1) - (-3 \times -2) = 1 - 6 = -5$
+* **j-component:** $-[(2 \times 1) - (-3 \times 4)] = -(2 + 12) = -14$
+* **k-component:** $(2 \times -2) - (1 \times 4) = -4 - 4 = -8$
+
+**Result:**
+$$\vec{a} \times \vec{b} = \mathbf{[-5, -14, -8]}$$
 
 ---
 
-## (c) Cross product $\vec{a}\times\vec{b}$
+## d) Angle between vectors $\vec{a}$ and $\vec{b}$
 
-Let $\vec{a}=[2,1,-3]$ and $\vec{b}=[4,-2,1]$.
+We use the relationship between the dot product and the magnitudes:
+$$\cos \theta = \frac{\vec{a} \cdot \vec{b}}{\|\vec{a}\| \|\vec{b}\|}$$
 
-### $x$-component
-$$
-(\vec{a}\times\vec{b})_x = a_y b_z - a_z b_y = (1)(1) - (-3)(-2) = 1 - 6 = -5
-$$
 
-### $y$-component
-$$
-(\vec{a}\times\vec{b})_y = a_z b_x - a_x b_z = (-3)(4) - (2)(1) = -12 - 2 = -14
-$$
 
-### $z$-component
-$$
-(\vec{a}\times\vec{b})_z = a_x b_y - a_y b_x = (2)(-2) - (1)(4) = -4 - 4 = -8
-$$
+[Image of angle between two vectors in 3D]
 
-So,
 
-$$
-\vec{a}\times\vec{b} = [-5,\,-14,\,-8]
-$$
+**Calculation:**
+$$\cos \theta = \frac{3}{\sqrt{14} \cdot \sqrt{21}}$$
+$$\cos \theta = \frac{3}{\sqrt{294}} \approx 0.17496$$
 
-**Answer (c):**
-
-$$
-\vec{a}\times\vec{b} = [-5,\,-14,\,-8]
-$$
+**Final Result:**
+* **Radians:** $\theta = \arccos(0.17496) \approx \mathbf{1.395 \text{ rad}}$
+* **Degrees:** $\theta \approx \mathbf{79.92^\circ}$
 
 ---
 
-## (d) Angle between $\vec{a}$ and $\vec{b}$
+## Summary Table
 
-Use
+| Operation | Result |
+| :--- | :--- |
+| **Magnitude $\|\vec{a}\|$** | $\sqrt{14} \approx 3.74$ |
+| **Magnitude $\|\vec{b}\|$** | $\sqrt{21} \approx 4.58$ |
+| **Dot Product $\vec{a} \cdot \vec{b}$** | $3$ |
+| **Cross Product $\vec{a} \times \vec{b}$** | $[-5, -14, -8]$ |
+| **Angle $\theta$** | $79.92^\circ$ |
 
-$$
-\theta = \arccos\!\left(\frac{\vec{a}\cdot\vec{b}}{|\vec{a}|\,|\vec{b}|}\right)
-$$
-
-We already found:
-- $\vec{a}\cdot\vec{b} = 3$
-- $|\vec{a}| = \sqrt{14}$
-- $|\vec{b}| = \sqrt{21}$
-
-Substitute:
-
-$$
-\theta = \arccos\!\left(\frac{3}{\sqrt{14}\sqrt{21}}\right)
-$$
-
-Combine the radicals:
-
-$$
-\sqrt{14}\sqrt{21}=\sqrt{294}
-$$
-
-So the exact form is:
-
-$$
-\theta = \arccos\!\left(\frac{3}{\sqrt{294}}\right)
-$$
-
-Optional numeric approximation:
-- $\sqrt{294}\approx 17.146$
-- $\frac{3}{\sqrt{294}}\approx 0.175$
-
-So,
-
-$$
-\theta \approx \arccos(0.175)\approx 1.395\text{ rad}\approx 79.9^\circ
-$$
-
-**Answer (d):**
-
-$$
-\theta = \arccos\!\left(\frac{3}{\sqrt{294}}\right)\approx 79.9^\circ
-$$
-
----
-
-## Final answers (summary)
-
-$$
-|\vec{a}|=\sqrt{14}, \qquad |\vec{b}|=\sqrt{21}
-$$
-
-$$
-\vec{a}\cdot\vec{b}=3
-$$
-
-$$
-\vec{a}\times\vec{b}=[-5,\,-14,\,-8]
-$$
-
-$$
-\theta=\arccos\!\left(\frac{3}{\sqrt{294}}\right)\approx 79.9^\circ
-$$
