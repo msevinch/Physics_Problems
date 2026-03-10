@@ -1,206 +1,55 @@
-1. Theory and Concepts
-Newton's Law of Universal Gravitation
-The law states that every particle attracts every other particle in the universe with a force that is:
+## 3. Proportionality
 
-Directly proportional to the product of their masses (m 
-1
-​
-  and m 
-2
-​
- ).
+This document analyzes the scaling effects on gravitational force when mass and distance parameters are modified, based on Newton's Law of Universal Gravitation.
 
-Inversely proportional to the square of the distance (r) between their centers.
+---
 
-Newton's Law of Universal Gravitation, AI generated
-Shutterstock
-Explore
-Proportionality Logic
-Masses: If you increase the mass, the force increases linearly. If you halve the mass, the force is halved.
+### 1. Theory and Formulas
 
-Distance (Inverse Square Law): Because the distance is squared in the denominator, any change in distance has an exponential impact on the force. For example, doubling the distance doesn't just halve the force—it reduces it to one-fourth.
+**Newton's Law of Universal Gravitation** states that the force of attraction between two bodies is proportional to the product of their masses and inversely proportional to the square of the distance between them.
 
-the inverse square law for gravity, AI generated
-Shutterstock
-Explore
-2. General Formula
-The gravitational force F is expressed as:
 
-F=G 
-r 
-2
- 
-m 
-1
-​
- m 
-2
-​
- 
-​
- 
+
+**General Formula:**
+$$F = G \frac{m_1 m_2}{r^2}$$
+
 Where:
+* **$F$**: Gravitational force.
+* **$G$**: Gravitational constant.
+* **$m_1, m_2$**: Masses of the two objects.
+* **$r$**: Distance between the centers of the masses.
 
-G is the gravitational constant.
+---
 
-m 
-1
-​
- ,m 
-2
-​
-  are the masses.
+### 2. Determination of Force Change
 
-r is the distance between the centers of the masses.
+To determine the factor of change, we define the new parameters as follows:
+* **Masses are halved:** $m_1' = \frac{1}{2}m_1$ and $m_2' = \frac{1}{2}m_2$
+* **Distance is doubled:** $r' = 2r$
 
-3. Step-by-Step Determination
-To find the new force F 
-′
- , we apply the specified changes to the original variables:
+#### Step-by-Step Substitution:
 
-New masses: m 
-1
-′
-​
- = 
-2
-1
-​
- m 
-1
-​
-  and m 
-2
-′
-​
- = 
-2
-1
-​
- m 
-2
-​
- 
+1.  **Plug new values into the original equation:**
+    $$F' = G \frac{(\frac{1}{2}m_1)(\frac{1}{2}m_2)}{(2r)^2}$$
 
-New distance: r 
-′
- =2r
+2.  **Simplify the numerator (Masses):**
+    $$(\frac{1}{2}m_1)(\frac{1}{2}m_2) = \frac{1}{4}m_1 m_2$$
 
-Step 1: Substitute the new values into the formula
-F 
-′
- =G 
-(2r) 
-2
- 
-( 
-2
-1
-​
- m 
-1
-​
- )( 
-2
-1
-​
- m 
-2
-​
- )
-​
- 
-Step 2: Simplify the numerator
-The product of the halved masses creates a factor of 1/4:
+3.  **Simplify the denominator (Distance):**
+    $$(2r)^2 = 4r^2$$
 
-( 
-2
-1
-​
- m 
-1
-​
- )⋅( 
-2
-1
-​
- m 
-2
-​
- )= 
-4
-1
-​
- m 
-1
-​
- m 
-2
-​
- 
-Step 3: Simplify the denominator
-The square of the doubled distance creates a factor of 4:
+4.  **Calculate the final ratio:**
+    $$F' = G \frac{\frac{1}{4}m_1 m_2}{4r^2} = \left( \frac{1/4}{4} \right) \cdot G \frac{m_1 m_2}{r^2}$$
+    $$F' = \frac{1}{16} F$$
 
-(2r) 
-2
- =4r 
-2
- 
-Step 4: Combine the factors
-Now, substitute these back into the force equation:
+---
 
-F 
-′
- =G 
-4r 
-2
- 
-4
-1
-​
- m 
-1
-​
- m 
-2
-​
- 
-​
- 
-F 
-′
- =( 
-4
-1/4
-​
- )⋅(G 
-r 
-2
- 
-m 
-1
-​
- m 
-2
-​
- 
-​
- )
-F 
-′
- = 
-16
-1
-​
- ⋅F
-4. Final Result
-The gravitational force F changes by a factor of 1/16 (or 0.0625). This means the new force is 16 times weaker than the original force.
+### 3. Summary Table
 
-Summary Table
-Variable Change	Effect on Force (F)
-Masses halved (m/2×m/2)	×1/4
-Distance doubled (2r→(2r) 
-2
- )	×1/4
-Combined Total Factor	1/16
-Would you like me to create a simple interactive tool or a simulation description to help visualize how gravity changes as you move objects around?
+| Change Factor | Impact on Force ($F$) |
+| :--- | :--- |
+| **Masses ($m_1 \cdot m_2$)** | Decreases force by factor of $1/4$ |
+| **Distance ($r^2$)** | Decreases force by factor of $1/4$ |
+| **Total Factor Change** | **$1/16$ (or $0.0625$)** |
+
+**Conclusion:** If the distance is doubled and both masses are halved, the resulting gravitational force is **$16$ times weaker** than the original.
