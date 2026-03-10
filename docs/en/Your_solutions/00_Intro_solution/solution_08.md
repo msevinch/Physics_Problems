@@ -1,6 +1,5 @@
 ## 8. Definite Integrals
 
-This document provides a step-by-step calculation to find the area under a trigonometric curve using the principles of integral calculus.
 
 ---
 
@@ -57,3 +56,4 @@ $$\mathbf{\text{Area} = 2}$$
 | **Calculated Area** | **$2$** |
 
 **Conclusion:** The total area under the curve of $\sin(x)$ on the interval $[0, \pi]$ is exactly **2 square units**.
+
