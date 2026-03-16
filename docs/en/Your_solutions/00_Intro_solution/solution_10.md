@@ -1,180 +1,61 @@
-This problem uses **infinite series** and **alternating series**. The key idea is that the ant’s movements in the **east–west direction** and **north–south direction** form **separate infinite series**.
+## 10. Infinite Series
 
-We analyze each direction independently.
-
----
-
-# Step 1: Write the Movement Pattern
-
-The ant moves:
-
-1. (1) m **east**
-2. ( \frac12 ) m **north**
-3. ( \frac13 ) m **west**
-4. ( \frac14 ) m **south**
-5. ( \frac15 ) m **east**
-6. ( \frac16 ) m **north**
-7. ( \frac17 ) m **west**
-8. ( \frac18 ) m **south**
-   ⋯
-
-Notice the pattern:
-
-* **Odd terms → horizontal motion**
-* **Even terms → vertical motion**
+This document analyzes the convergent path of an ant moving in a repeating pattern of orthogonal steps, eventually stabilizing at a specific point in the 2D plane.
 
 ---
 
-# Step 2: Separate Motions Into Coordinates
+### 1. Theory and Concepts
 
-Let the final position be:
+**Separation of Components**
+In a 2D coordinate system, horizontal (East/West) and vertical (North/South) movements are independent. To find the final position, we treat the $x$-coordinates and $y$-coordinates as two separate infinite series.
 
-[
-(x,y)
-]
+**Convergent Alternating Series**
+The ant's steps get progressively smaller ($1, 1/2, 1/3, \dots$). Because the direction alternates (East then West, North then South), these form **Alternating Series**. According to the Alternating Series Test, if the terms decrease toward zero, the sum converges to a specific finite value.
 
-Where:
 
-* (x) = east-west displacement
-* (y) = north-south displacement
 
 ---
 
-# Step 3: Horizontal Motion (x–direction)
+### 2. Formulas
 
-Horizontal steps occur at:
+To solve this, we rely on two famous Taylor series expansions:
 
-1, 3, 5, 7, 9...
+1.  **Gregory-Leibniz Series for $\pi$:**
+    $$\arctan(x) = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \dots$$
+    When $x=1$, $\arctan(1) = \frac{\pi}{4}$.
 
-Directions alternate:
-
-* east (+)
-* west (−)
-* east (+)
-* west (−)
-
-So the horizontal displacement is:
-
-[
-x = 1 - \frac13 + \frac15 - \frac17 + \frac19 - \cdots
-]
+2.  **Mercator Series for Natural Logarithms:**
+    $$\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \dots$$
+    When $x=1$, $\ln(2) = 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \dots$
 
 ---
 
-# Step 4: Recognize the Series
+### 3. Step-by-Step Determination
 
-This is the **alternating odd harmonic series**.
+The ant starts at $(0, 0)$. Let's track the movement:
 
-From calculus theory:
+#### Step 1: Horizontal Position ($x$)
+The ant moves 1m East ($+$), 1/3m West ($-$), 1/5m East ($+$), and so on.
+$$x = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \dots$$
+Matching this to the formula for $\arctan(1)$:
+$$\mathbf{x = \frac{\pi}{4}} \approx 0.7854 \text{ m}$$
 
-[
-1 - \frac13 + \frac15 - \frac17 + \frac19 - \cdots
-]
-
-is the **Leibniz series** for:
-
-[
-\frac{\pi}{4}
-]
-
-Therefore
-
-[
-x = \frac{\pi}{4}
-]
+#### Step 2: Vertical Position ($y$)
+The ant moves 1/2m North ($+$), 1/4m South ($-$), 1/6m North ($+$), and so on.
+$$y = \frac{1}{2} - \frac{1}{4} + \frac{1}{6} - \frac{1}{8} + \dots$$
+To solve this, we factor out $1/2$ from the series:
+$$y = \frac{1}{2} \left( 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \dots \right)$$
+Using the $\ln(2)$ identity:
+$$\mathbf{y = \frac{1}{2} \ln 2} \approx 0.3466 \text{ m}$$
 
 ---
 
-# Step 5: Vertical Motion (y–direction)
+### 4. Summary Table
 
-Vertical steps occur at:
+| Direction | Movement Pattern | Mathematical Identity | Final Coordinate |
+| :--- | :--- | :--- | :--- |
+| **Horizontal ($x$)** | $1 - 1/3 + 1/5 \dots$ | $\arctan(1)$ | $\frac{\pi}{4}$ |
+| **Vertical ($y$)** | $1/2 - 1/4 + 1/6 \dots$ | $\frac{1}{2} \ln 2$ | $\frac{1}{2} \ln 2$ |
 
-2, 4, 6, 8...
-
-Directions alternate:
-
-* north (+)
-* south (−)
-* north (+)
-* south (−)
-
-So
-
-[
-y = \frac12 - \frac14 + \frac16 - \frac18 + \frac1{10} - \cdots
-]
-
----
-
-# Step 6: Factor the Series
-
-Factor out ( \frac12 ):
-
-[
-y = \frac12 \left(1 - \frac12 + \frac13 - \frac14 + \frac15 - \cdots \right)
-]
-
----
-
-# Step 7: Recognize Another Known Series
-
-From infinite series theory:
-
-[
-1 - \frac12 + \frac13 - \frac14 + \frac15 - \cdots = \ln(2)
-]
-
-Thus
-
-[
-y = \frac12 \ln(2)
-]
-
----
-
-# Step 8: Final Position
-
-Combine (x) and (y):
-
-[
-(x,y) =
-\left(
-\frac{\pi}{4},
-\frac12 \ln(2)
-\right)
-]
-
----
-
-# Step 9: Numerical Approximation
-
-[
-\frac{\pi}{4} \approx 0.785
-]
-
-[
-\frac12 \ln(2) \approx 0.3466
-]
-
-So the ant ends approximately at:
-
-[
-(0.785,;0.347)
-]
-
----
-
-# ✅ Final Answer
-
-[
-\boxed{\left(\frac{\pi}{4},;\frac12 \ln 2\right)}
-]
-
----
-
-✔ Final position relative to the origin:
-
-* **0.785 m east**
-* **0.347 m north**
-
----
+**Final Position:**
+$$\boxed{\left( \frac{\pi}{4}, \frac{1}{2} \ln 2 \right)}$$
