@@ -1,4 +1,4 @@
-
+### 1. Gravitational Dependence
 
 To solve both parts, we’ll use the **simple pendulum formula**:
 
