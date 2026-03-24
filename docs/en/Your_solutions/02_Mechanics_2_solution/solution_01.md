@@ -1,8 +1,9 @@
+
+
 To solve both parts, we’ll use the **simple pendulum formula**:
 
-[
-T = 2\pi \sqrt{\frac{L}{g}}
-]
+$$T = 2\pi \sqrt{\frac{L}{g}}$$
+
 
 where
 
