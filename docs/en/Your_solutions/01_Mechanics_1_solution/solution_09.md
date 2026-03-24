@@ -1,4 +1,4 @@
-#### 9. Momentum Comparison
+### 9. Momentum Comparison
 
 ### Fundamental Theory
 
