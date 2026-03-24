@@ -1,4 +1,11 @@
+1. Projectile Motion
 
+A projectile is fired from the ground with an initial velocity of 100 m/s at an angle of 37∘ above the horizontal. Assume no air resistance.
+Derive the differential equations of motion in the horizontal and vertical directions.
+
+Determine the time of flight.
+Determine the maximum height.
+Determine the range. 
 
 To make the calculations clean and follow standard physics conventions for this specific angle, we will use the common approximations: **cos(37°) ≈ 0.8** and **sin(37°) ≈ 0.6**. We will use standard Earth gravity as **9.8 m/s²**.
 
