@@ -1,4 +1,4 @@
-1. Projectile Motion
+### 1. Projectile Motion
 
 
 
