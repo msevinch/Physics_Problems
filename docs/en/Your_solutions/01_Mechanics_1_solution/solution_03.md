@@ -1,4 +1,4 @@
-
+### 3. Path Intersection
 
 ### Fundamental Theory
 
