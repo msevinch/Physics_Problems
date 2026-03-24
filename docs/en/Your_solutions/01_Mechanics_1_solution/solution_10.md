@@ -1,5 +1,4 @@
 ### 10. Kinematics
-.
 
 ### Fundamental Theory
 
