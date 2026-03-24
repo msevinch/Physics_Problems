@@ -43,9 +43,8 @@ The first block is traveling at approximately 7.668 m/s right before the collisi
 
 ### Step 2: Determine the Final Speed of the Combined Mass
 
+![Uploading licensed-image.jpg…]()
 
-
-[Image of perfectly inelastic collision]
 
 
 **1. Define the momentum equation for the collision:**
