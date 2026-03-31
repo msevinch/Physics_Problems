@@ -1,4 +1,3 @@
-This problem explores the fundamental relationship between conservative forces, work, and potential energy, using the specific example of a restorative linear force (Hooke's Law).
 
 ### 1. Theory
 A **conservative force** is a force where the work done depends only on the initial and final positions, not the path taken. For such forces, we can define a **Potential Energy ($U$)** function. 
@@ -58,8 +57,3 @@ This is a straight line passing through the origin with a negative slope ($-k$).
 This is a parabola opening upwards, centered at the origin. It shows that potential energy is always positive (whether $x$ is positive or negative) and increases quadratically with displacement.
 
 
-
-[Image of potential energy curve for a simple harmonic oscillator]
-
-
-Would you like to explore how this changes if we add a damping force to the equation of motion?
