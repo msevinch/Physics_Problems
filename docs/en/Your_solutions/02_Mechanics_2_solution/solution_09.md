@@ -4,23 +4,30 @@
 
 ### **Step 1: Solve for Velocity $v(t)$**
 We start with Newton's Second Law:
+
 $$m \frac{dv}{dt} = -mg - kv$$
 
 **1.1 Separate the variables:**
 Move all terms involving $v$ to one side and $t$ to the other:
+
 $$\frac{dv}{mg + kv} = -\frac{1}{m} dt$$
 
 **1.2 Integrate both sides:**
 Integrate from the initial state ($t=0, v=v_0$) to a general state ($t, v$):
+
 $$\int_{v_0}^{v} \frac{dv}{mg + kv} = \int_{0}^{t} -\frac{1}{m} dt$$
 
 Using the substitution $u = mg + kv$, where $du = k \, dv$:
+
 $$\frac{1}{k} \left[ \ln(mg + kv) \right]_{v_0}^{v} = -\frac{t}{m}$$
+
 $$\ln\left(\frac{mg + kv}{mg + kv_0}\right) = -\frac{k}{m}t$$
 
 **1.3 Isolate $v$:**
 Exponentiate both sides:
+
 $$\frac{mg + kv}{mg + kv_0} = e^{-\frac{k}{m}t}$$
+
 $$v(t) = \left(v_0 + \frac{mg}{k}\right)e^{-\frac{k}{m}t} - \frac{mg}{k}$$
 
 
