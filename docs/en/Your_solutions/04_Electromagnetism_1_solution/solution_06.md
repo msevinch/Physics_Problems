@@ -25,7 +25,7 @@ Set $y = 0$. The field only has an x-component ($E_y = 0$).
 
 $$\vec{E}(x, 0) = kq \left[ \frac{\text{sgn}(x+a)}{(x+a)^2} + \frac{2 \cdot \text{sgn}(x-a)}{(x-a)^2} \right] \hat{i}$$
 
-*(Where $\text{sgn}$ denotes the sign of the displacement to ensure the force is always repulsive).*
+
 
 ---
 
