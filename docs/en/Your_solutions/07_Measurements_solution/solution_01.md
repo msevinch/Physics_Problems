@@ -59,7 +59,6 @@ $$\Delta V = 4\pi (38.44) (0.05)$$
 
 $$\Delta V = 24.15256... \text{ cm}^3$$
 
-*(Note: If you used the relative uncertainty method $\Delta V = 3 \cdot V \cdot (\Delta r / r)$, you would get the exact same raw value of **24.15256...**)*
 
 #### **Step C: Rounding and Significant Figures**
 
