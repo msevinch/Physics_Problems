@@ -1,4 +1,3 @@
-Here is the step-by-step solution for calculating the percentage uncertainty of your time measurement.
 
 ### **1. Theory: Percentage Uncertainty**
 
