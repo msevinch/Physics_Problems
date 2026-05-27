@@ -1,4 +1,3 @@
-Here is the step-by-step solution for calculating the resistance and its associated uncertainty, using the standard rules for error propagation.
 
 ### **1. Theory: Propagation of Error for Quotients**
 
