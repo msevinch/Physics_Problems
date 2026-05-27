@@ -18,7 +18,6 @@ Alternatively, this can be written using relative uncertainties:
 
 $$\frac{\delta A}{A} = \sqrt{\left(\frac{\delta L}{L}\right)^2 + \left(\frac{\delta W}{W}\right)^2}$$
 
-*(Note: In some introductory courses, a simpler "maximum error" or "worst-case" method is taught, which simply adds the relative errors: $\frac{\delta A}{A} = \frac{\delta L}{L} + \frac{\delta W}{W}$. The quadrature method above is the more rigorous standard for independent random errors and will be used for the primary determination here.)*
 
 ---
 
