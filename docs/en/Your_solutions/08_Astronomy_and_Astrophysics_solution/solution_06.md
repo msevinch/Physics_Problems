@@ -21,7 +21,6 @@ factor: 28.099368808126016
 
 ```
 
-To calculate the solar gravity and determine the relative increase in your weight, we will break this down into the underlying theory and the step-by-step determination.
 
 ---
 
