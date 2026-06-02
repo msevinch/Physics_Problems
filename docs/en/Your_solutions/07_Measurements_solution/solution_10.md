@@ -45,7 +45,6 @@ $$c = \lambda \cdot f$$
 
 ### **2. Determination: Step-by-Step Calculation**
 
-*If you have already performed the experiment, replace the sample measurement below with your actual measured distance.*
 
 #### **Given Parameters:**
 
