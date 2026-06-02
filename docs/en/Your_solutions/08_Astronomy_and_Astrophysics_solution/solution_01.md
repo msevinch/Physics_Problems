@@ -1,6 +1,4 @@
-Calculating the linear speed of a point on the Earth's equator is a great way to understand how fast we are actually moving through space just by standing still.
 
-Here is the step-by-step breakdown using the underlying physical theory and the final determination of the speed.
 
 ---
 
