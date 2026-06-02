@@ -22,7 +22,6 @@ Percentage Error: 0.36666666666666664%
 
 ```
 
-This classic experiment uses a kitchen appliance to measure one of the fundamental constants of the universe. Below is the breakdown of the underlying physics theory, followed by a step-by-step determination using a typical experimental measurement.
 
 ---
 
