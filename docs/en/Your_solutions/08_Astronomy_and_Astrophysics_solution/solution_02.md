@@ -36,7 +36,6 @@ v_Earth: 29.865319164858477 km/s
 
 This problem takes us into the realm of orbital mechanics, where we get to look at two different scales of cosmic motion: a human-made satellite orbiting our planet, and our planet orbiting our star.
 
-Here is the step-by-step breakdown using **Theory** and **Determine** for both calculations, followed by the final comparison.
 
 ---
 
