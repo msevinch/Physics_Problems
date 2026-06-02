@@ -48,7 +48,9 @@ $$c = \lambda \cdot f$$
 
 #### **Given Parameters:**
 
-Microwave Frequency ($f$): $2.45\text{ GHz} = 2.45 \times 10^9\text{ Hz}$ (found on the sticker on the back of most household microwaves).Accepted Speed of Light ($c$): $300,000,000\text{ m/s}$ (or $3.00 \times 10^8\text{ m/s}$).Sample Measured Distance ($d$): Let's assume the distance between the centers of two adjacent melted spots is measured to be 6.1 cm ($0.061\text{ m}$).
+Microwave Frequency ($f$): $2.45\text{ GHz} = 2.45 \times 10^9\text{ Hz}$ (found on the sticker on the back of most household microwaves).
+Accepted Speed of Light ($c$): $300,000,000\text{ m/s}$ (or $3.00 \times 10^8\text{ m/s}$).
+Sample Measured Distance ($d$): Let's assume the distance between the centers of two adjacent melted spots is measured to be 6.1 cm ($0.061\text{ m}$).
 
 #### **Step A: Calculate the Wavelength ($\lambda$)**
 
